@@ -68,7 +68,7 @@ docker: .bin/packr2
 		packr2 clean
 		docker build -t oryd/hydra:latest .
 		docker build -f Dockerfile-alpine -t oryd/hydra:latest-alpine .
-		rm hydra
+#		rm hydra
 
 .PHONY: e2e
 e2e: node_modules test-resetdb
